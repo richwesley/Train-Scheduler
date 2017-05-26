@@ -60,8 +60,10 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: .67em 0;
-  font-size: 2em;
+	margin: .67em 0;
+	font-size: 2em;
+	min-width: 349px;
+	text-align: left;
 }
 mark {
   color: #000;
@@ -187,6 +189,11 @@ td,
 th {
   padding: 0;
 }
+#console {
+	margin-left: 281px;
+
+}
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -1115,15 +1122,6 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 .img-rounded {
   border-radius: 6px;
 }
@@ -1500,11 +1498,10 @@ blockquote .small:before {
 }
 .blockquote-reverse,
 blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  text-align: right;
-  border-right: 5px solid #eee;
-  border-left: 0;
+	padding-right: 15px;
+	padding-left: 0;
+	border-right: 5px solid #eee;
+	border-left: 0;
 }
 .blockquote-reverse footer:before,
 blockquote.pull-right footer:before,
@@ -1594,12 +1591,12 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+	width: 950px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+	width: 940px;
   }
 }
 .container-fluid {
@@ -2547,22 +2544,22 @@ output {
   color: #555;
 }
 .form-control {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	display: block;
+	width: 100%;
+	height: 26px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3836,11 +3833,12 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.3333333;
-  border-radius: 6px;
+	height: 46px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	border-color: #4B4A4A;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
@@ -4164,14 +4162,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+
   }
 }
 @media (min-width: 768px) {
@@ -4180,13 +4177,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	-webkit-overflow-scrolling: touch;
+	border-top: 1px solid transparent;
+	-webkit-box-shadow: inset 0 1px 0 white;
+	box-shadow: inset 0 1px 0 white;
 }
 .navbar-collapse.in {
   overflow-y: auto;
@@ -4228,16 +4225,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
+
   }
 }
 .navbar-static-top {
@@ -4251,10 +4246,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+	z-index: 1030;
+	position: fixed;
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -4493,8 +4486,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-	background-color: #e7e7e7;
-	border-color: #e7e7e7;
+	background-color: #FFFFFF;
+	border-color: white;
 	max-width: 1100px;
 }
 .navbar-default .navbar-brand {
@@ -4529,18 +4522,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+	border-color: white;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+	background-color: white;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+	border-color: #FCFCFC;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -4957,12 +4950,9 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-	padding-top: 30px;
-	padding-bottom: 30px;
 	margin-bottom: 30px;
 	color: inherit;
 	background-color: #eee;
-	max-width: 1100px;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4978,22 +4968,15 @@ a.badge:focus {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-  padding-right: 15px;
-  padding-left: 15px;
-  border-radius: 6px;
+	border-radius: 6px;
 }
 .jumbotron .container {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
   .container .jumbotron,
   .container-fluid .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
+
   }
   .jumbotron h1,
   .jumbotron .h1 {
@@ -5461,10 +5444,12 @@ button.list-group-item-danger.active:focus {
   padding: 15px;
 }
 .panel-heading {
-  padding: 10px 15px;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;

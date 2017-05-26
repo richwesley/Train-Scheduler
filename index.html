@@ -9,32 +9,60 @@
   
   <link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
   <link href="css/embarcadero.css" rel="stylesheet" type="text/css">
-  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/neuton:n2,n3,n4:default.js" type="text/javascript"></script>
+  <script>var __adobewebfontsappname__="dreamweaver"</script>
+  <script src="http://use.edgefonts.net/neuton:n2,n3,n4,n7:default.js" type="text/javascript"></script>
   <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  
   
 
 </head>
   
+  
   <body style="padding-top: 70px">
-  <div class="container">
-	  <nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid">  
-			<div class="collapse navbar-collapse" id="Navbar">
-			  <ul class="nav navbar-nav">
-				<li class="active"><a href="#">Admin Page</a></li>
-				<li>&nbsp;&nbsp;</li>
-				<li class ="active"><a href="#">Train Schedule</a></li>	        
-			  </ul>                  
-			</div>
+	  <div class="container" id="wrapper">
+			<div class="row">
+				<div class="col-md-12">
+					  <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+						<!--  <div class="container-fluid">  -->
+							<div> 
+							  <ul class="nav navbar-nav">
+							  	 <li><a href="index.html"><button>Main Page</button></a></li>
+							  	 <li><a href="admin.html"><button>Admin Page</button></a></li>
+							  	 <li><a href="schedule.html"><button>Train Schedules</button></a></li>	        
+							  </ul>                  
+							</div>
+						 
+					  </nav>
+				</div>	  
 		  </div>
-	  </nav>
-	</div>
-  <div class="jumbotron">
-  <img src="images/Embarcadero-Logo.jpg" id="logo" class="img-responsive" alt="Page Logo Image">
-  </div>
+	
+  	<div class ="row">
+  		<div class ="col-md-12" id="logo">
+  			<div class="col-md-6">
+  				<img src="images/logo.png" class="logo">
+  			</div>
+  			<div class="col-md-6">
+  				<img src="images/Muni-Logo.jpg" height="140" class="logo">
+  			</div>
+  		</div>
+  	</div>
+  	
+  	<div class = "row">
+  		<div class="col-md-6">
+	    <img src="images/BART-system-map.gif" width="480" height="480" alt="BART System Map"/> 
+	    </div>
+  		<div class="col-md-6">
+	    <img src="images/MuniMetro.jpg" width="450" height="275" alt="Muni Metro Map"/>
+	    <iframe width="440" height="205" src="https://www.youtube.com/embed/uhU5nwyaFOc?autoplay=1" frameborder="0"></iframe> 
+	    </div>
+  	</div>
+  	
+ </div> 
   
 	<script src="js/jquery-1.11.3.min.js"></script>	
 	<script src="js/bootstrap-3.3.7.js"></script>
 	<script src="js/embarcadero.js"></script>
+	
 </body>
 </html>
