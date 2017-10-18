@@ -6,5 +6,6 @@ Lists train schedules
 * Javascript
 * Node.js
 * Firebase
+* Moment.js
 
 View: [Train Scheduler]( https://richwesley.github.io/Train-Scheduler/)
